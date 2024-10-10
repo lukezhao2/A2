@@ -20,7 +20,7 @@ const windowHeight = Dimensions.get("window").height;
 const Header = () => {
   return (
     <View style={styles.header}>
-      <Text>{Profiles.landay.name}</Text>
+      <Text style={styles.name}>{Profiles.landay.name}</Text>
       <Text>{Profiles.landay.pronouns}</Text>
       <Image 
         source={Icons.sun /* For dark mode, use Icons.moon */} 
@@ -37,6 +37,10 @@ const styles = StyleSheet.create({
   },
   header: {
     // fill this in!
+  },
+  name: {
+    // We've loaded this font for you in App.js
+    fontFamily: 'Sydney-Bold', // 'Sydney' is the non-bold version
   },
   // add more styles for other components!
 });
